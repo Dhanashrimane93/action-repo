@@ -1,0 +1,9 @@
+name: Push Workflow
+on:
+  push:
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify webhook on push
+        run: echo "Push event detected"
