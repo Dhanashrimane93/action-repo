@@ -1,0 +1,9 @@
+name: Pull Request Workflow
+on:
+  pull_request:
+jobs:
+  notify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Notify webhook on pull request
+        run: echo "Pull request event detected"
